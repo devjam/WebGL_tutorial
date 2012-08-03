@@ -189,9 +189,9 @@ initEffect = ->
 	-------------------------------------------------------------
 	compose
 	###
-	#@composer.addPass renderScene
-	#@composer.addPass renderSceneFocus
-	#@composer.addPass renderToon1
+	@composer.addPass renderScene
+	@composer.addPass renderSceneFocus
+	@composer.addPass renderToon1
 	@composer.addPass renderDepth
 
 	@composer.addPass effectBloom
@@ -201,33 +201,4 @@ initEffect = ->
 	@composer.addPass effectRGB
 	@composer.addPass effectVignette
 	@composer.addPass screenPass
-	#effectVignette.renderToScreen = true
 	screenPass.renderToScreen = true;
-
-
-#------------------------------------------------------------
-windowWidth = ->
-	size = 0
-	
-	if document.documentElement.clientWidth
-		size = document.documentElement.clientWidth
-	else
-		if document.body.clientWidth
-			size = document.body.clientWidth
-		else 
-			if window.innerWidth
-				size = window.innerWidth
-	size
-
-windowHeight = ->
-	size = 0
-  
-	if document.documentElement.clientHeight
-		size = document.documentElement.clientHeight
-	else
-		if document.body.clientHeight
-			size = document.body.clientHeight
-		else
-			if window.innerHeight
-				size = window.innerHeight     
-	size

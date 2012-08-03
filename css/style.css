@@ -1,0 +1,22 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: style.css
+ * style info	:  index.html用CSS
+ -----------------------------------------------------------*/
+@import url("../common/css/reset.css");
+@import url("../common/css/base.css");
+
+/* print style - 印刷用スタイル
+----------------------------------------------------------- */
+@import url("../common/css/print.css") print;
+
+/* ---------------------------------------------------------*/
+body {
+	margin:0;
+	padding:0px;
+}
+canvas {
+	position: absolute;
+}

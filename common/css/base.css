@@ -1,0 +1,113 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: base.css
+ * style info	:  基本設定、カラーなど
+ -----------------------------------------------------------*/
+ 
+/*	基本設定
+----------------------------------------------------*/
+body {
+	color: #333;
+	background: #ffffff;
+	font-size: 12px;
+	font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	line-height: 1.8;
+}
+
+html:not(:target) body {
+	font-size: 12px;
+}
+
+* html body {	/* for IF6 */
+	font-family: "ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
+input,textarea,select {
+	font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	font-size: 100%;
+}
+
+* html input,
+* html textarea,
+* html select {/* for IF6 */
+	font-family: "ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
+
+/*\*/
+* html body {
+	font-size: 75%;
+}
+* html table {
+	font-size: 100%;
+	line-height: 1.5;
+}
+*:first-child+html body {
+	font-size: 70%;
+}
+/**/
+
+
+/* link ---*/
+a:link {
+	color: #ef6234;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #ef6234;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+ul {
+	list-style:none;
+}
+
+object, embed {
+	display: block;
+	margin: 0;
+}
+
+/*	汎用class
+----------------------------------------------------*/
+.imgR {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.imgL {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+/* even - odd */
+.even{}
+.odd{}
+
+/* :focus */
+.focus{}
+
+
+/* Clearfix
+----------------------------------------------------*/
+.clear {
+	height:0;
+	clear:both;
+	font-size: 0;
+	line-height:0;
+}
+.clearfix:after { content:""; display:block; height:0; clear:both; font-size: 0;}
+.clearfix { display:inline-block; }
+/*\*/
+* html .clearfix { height:0; }
+.clearfix { display:block; }
+/**/
